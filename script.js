@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             modalContent.style.borderColor = member.color;
 
-            modalContent.style.setProperty( "--member-color", member.color
+            modalContent.style.setProperty( "--member-color", member.color);
 
         }
     );
