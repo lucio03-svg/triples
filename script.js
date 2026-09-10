@@ -40,4 +40,109 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
+    let members = {};
+
+    // =================================
+    // CARGAR DATOS DESDE JSON
+    // =================================
+
+    fetch("Miembros.json")
+        .then(response => response.json())
+        .then(data => {
+
+            members = data;
+
+        })
+        .catch(error => {
+
+            console.error(
+                "Error al cargar members.json:",
+                error
+            );
+
+        });
+
+    // =================================
+    // MODAL DINÁMICO DE INTEGRANTES
+    // =================================
+
+    const memberModal = document.getElementById("memberModal");
+
+    memberModal.addEventListener(
+        "show.bs.modal",
+        function (event) {
+
+            const card = event.relatedTarget;
+
+            const memberId = card.dataset.member;
+
+            const member = members[memberId];
+
+            if (!member) {
+                console.error(
+                    "No se encontró la integrante:",
+                    memberId
+                );
+
+                return;
+            }
+
+
+            // ==========================
+            // INFORMACIÓN
+            // ==========================
+
+            document.getElementById("modalName")
+                .textContent = member.name;
+
+            document.getElementById("modalS")
+                .textContent = member.s;
+
+            document.getElementById("modalRealName")
+                .textContent = member.realName;
+
+            document.getElementById("modalBirth")
+                .textContent = member.birth;
+
+            document.getElementById("modalCountry")
+                .textContent = member.country;
+
+            document.getElementById("modalUnit")
+                .textContent = member.unit;
+
+            document.getElementById("modalEmoji")
+                .textContent = member.emoji;
+
+            document.getElementById("modalDescription")
+                .textContent = member.description;
+
+
+            // ==========================
+            // IMAGEN
+            // ==========================
+
+            const image = document.getElementById(
+                "modalImage"
+            );
+
+            image.src = member.image;
+
+            image.alt = member.name;
+
+
+            // ==========================
+            // COLOR
+            // ==========================
+
+            document.getElementById("modalColor")
+                .style.backgroundColor = member.color;
+
+                modalContent.style.setProperty(
+                "--member-color",
+                member.color
+            );
+
+        }
+    );
+
 });
