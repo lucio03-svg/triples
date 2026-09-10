@@ -1201,3 +1201,7 @@ header {
 body.modal-open {
     padding-right: 0 !important;
 }
+
+.modal {
+    padding-right: 0 !important;
+}
