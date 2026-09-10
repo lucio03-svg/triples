@@ -137,10 +137,15 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("modalColor")
                 .style.backgroundColor = member.color;
 
-                modalContent.style.setProperty(
-                "--member-color",
-                member.color
-            );
+
+            // Color del borde del modal
+
+            const modalContent =
+                document.querySelector(".member-modal-content");
+
+            modalContent.style.borderColor = member.color;
+
+            modalContent.style.setProperty( "--member-color", member.color
 
         }
     );
