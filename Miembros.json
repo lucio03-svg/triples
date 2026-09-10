@@ -1,0 +1,313 @@
+{
+    "seoyeon": {
+        "name": "Seoyeon",
+        "realName": "Yoon Seoyeon",
+        "s": "S1",
+        "birth": "6 de agosto de 2003",
+        "country": "Corea del Sur",
+        "unit": "+(KR)ystal Eyes, LOVElution, Neptune",
+        "emoji": "🐹",
+        "color": "#1E90FF",
+        "image": "https://i.pinimg.com/736x/32/4f/00/324f003848c62148c9fb342a2439284d.jpg",
+        "description": "Seoyeon es la Primera integrante de tripleS."
+    },
+
+    "hyerin": {
+        "name": "Hyerin",
+        "realName": "Jeong HyeRin",
+        "s": "S2",
+        "birth": "12 de Abril de 2007",
+        "country": "Corea del Sur",
+        "unit": "Acid Angel from Asia, LOVElution, Visionary Vision, Sun",
+        "emoji": "🐱",
+        "color": "#8B5FBF",
+        "image": "https://i.pinimg.com/736x/df/f7/67/dff767a2f6e7543b6acf745c43c3d31c.jpg",
+        "description": "HyeRin es la Segunda integrante de tripleS."
+    },
+
+    "jiwoo": {
+        "name": "Jiwoo",
+        "realName": "Lee Jiwoo",
+        "s": "S3",
+        "birth": "24 de Octubre de 2005",
+        "country": "Corea del Sur",
+        "unit": "+(KR)ystal Eyes, EVOLution, Aria, Hatchi, Zenith",
+        "emoji": "🐻",
+        "color": "#FFF44F",
+        "image": "https://i.pinimg.com/736x/20/69/16/2069168c3b3e85b5598d8d9c2c4679ea.jpg",
+        "description": "Jiwoo es la Tercera integrante de tripleS."
+    },
+
+    "chaeyeon": {
+        "name": "Chaeyeon",
+        "realName": "Kim Chaeyeon",
+        "s": "S4",
+        "birth": "4 de Diciembre de 2004",
+        "country": "Corea del Sur",
+        "unit": "+(KR)ystal Eyes, EVOLution, Aria, Hatchi, Sun",
+        "emoji": "🍑",
+        "color": "#7CB342",
+        "image": "https://i.pinimg.com/736x/79/33/b6/7933b6d163ac44bbc9b5d7963a031262.jpg",
+        "description": "Chaeyeon es la Cuarta integrante de tripleS."
+    },
+
+    "yooyeon": {
+        "name": "Yoo Yeon",
+        "realName": "Kim Yooyeon",
+        "s": "S5",
+        "birth": "9 de Febrero de 2001",
+        "country": "Corea del Sur",
+        "unit": "Acid Angel from Asia, EVOLution, Visionary Vision, Hatchi, Sun",
+        "emoji": "🐰",
+        "color": "#F47CB4",
+        "image": "https://i.pinimg.com/736x/c8/e2/9a/c8e29a76d878917bb00b890144a9ac33.jpg",
+        "description": "Yoo Yeon es la Quinta integrante de tripleS."
+    },
+
+    "soomin": {
+        "name": "Soomin",
+        "realName": "Kim Soomin",
+        "s": "S6",
+        "birth": "3 de Octubre de 2007",
+        "country": "Corea del Sur",
+        "unit": "+(KR)ystal Eyes, EVOLution, Hatchi, Zenith",
+        "emoji": "🐿️",
+        "color": "#F091A9",
+        "image": "https://i.pinimg.com/736x/85/15/53/851553f33d6964620a9299bc3346e6f3.jpg",
+        "description": "Soomin es la Sexta integrante de tripleS."
+    },
+
+    "nakyoung": {
+        "name": "Nakyoung",
+        "realName": "Kim Nakyoung",
+        "s": "S7",
+        "birth": "13 de Octubre de 2002",
+        "country": "Corea del Sur",
+        "unit": "Acid Angel from Asia",
+        "emoji": "🐈‍⬛",
+        "color": "#5F9EA0",
+        "image": "https://i.pinimg.com/736x/42/10/0a/42100a07e15411e213e5c7d2776d5892.jpg",
+        "description": "Nakyoung es la Séptima integrante de tripleS."
+    },
+
+    "yubin": {
+        "name": "Yubin",
+        "realName": "Gong Yubin",
+        "s": "S8",
+        "birth": "3 de Febrero de 2005",
+        "country": "Corea del Sur",
+        "unit": "Acid Angel from Asia, LOVElution, Visionary Vision, Zenith",
+        "emoji": "🐯",
+        "color": "#FFE4E1",
+        "image": "https://i.pinimg.com/736x/59/dd/d2/59ddd286d1db9a3b111a77762f12becd.jpg",
+        "description": "Yubin es la Octava integrante de tripleS."
+    },
+
+    "kaede": {
+        "name": "Kaede",
+        "realName": "Yamada Kaede",
+        "s": "S9",
+        "birth": "20 de Diciembre de 2005",
+        "country": "Corea del Sur",
+        "unit": "LOVElution, Aria, Visionary Vision, Moon",
+        "emoji": "🍁",
+        "color": "#FFCC33",
+        "image": "https://i.pinimg.com/736x/49/5c/a2/495ca20228dfd476a525d22d3db9736f.jpg",
+        "description": "Kaede es la Novena integrante de tripleS."
+    },
+
+    "dahyun": {
+        "name": "Dahyun",
+        "realName": "Seo Dahyun",
+        "s": "S10",
+        "birth": "8 de Enero de 2003",
+        "country": "Corea del Sur",
+        "unit": "LOVElution, Aria, Neptune",
+        "emoji": "🍒",
+        "color": "#FBAED2",
+        "image": "https://i.pinimg.com/736x/1f/aa/6f/1faa6fc9688ab17b4a0542fcd6afdc1e.jpg",
+        "description": "Dahyun es la Décima integrante de tripleS."
+    },
+
+    "kotone": {
+        "name": "Kotone",
+        "realName": "Kamimoto Kotone",
+        "s": "S11",
+        "birth": "10 de Marzo de 2004",
+        "country": "Corea del Sur",
+        "unit": "EVOLution, Aria, Visionary Vision, Hatchi, Neptune",
+        "emoji": "🦭",
+        "color": "#FFDF00",
+        "image": "https://i.pinimg.com/736x/9c/ec/53/9cec5347566722f43b3efceb2395616e.jpg",
+        "description": "Kotone es la Undécima integrante de tripleS."
+    },
+
+    "yeonji": {
+        "name": "Yeonji",
+        "realName": "Kwak Yeonji",
+        "s": "S12",
+        "birth": "8 de Enero de 2008",
+        "country": "Corea del Sur",
+        "unit": "EVOLlution, Visionary Vision, Zenith",
+        "emoji": "🦆",
+        "color": "#4169E1",
+        "image": "https://i.pinimg.com/736x/22/c7/42/22c742b930d3b42b508ddf764ccf3266.jpg",
+        "description": "Yeonji es la Duodécima integrante de tripleS."
+    },
+
+    "nien": {
+        "name": "Nien",
+        "realName": "Hsu Nien Tsu",
+        "s": "S13",
+        "birth": "2 de Junio de 2003",
+        "country": "Corea del Sur",
+        "unit": "LOVElution, Aria, Visionary Vision, Neptune",
+        "emoji": "🐑",
+        "color": "#FFA343",
+        "image": "https://i.pinimg.com/736x/71/3c/de/713cdeda1b9e673649b2fc7f140734ac.jpg",
+        "description": "Nien es la Decimotercera integrante de tripleS."
+    },
+
+    "sohyun": {
+        "name": "Sohyun",
+        "realName": "Park Sohyun",
+        "s": "S14",
+        "birth": "13 de Octubre de 2002",
+        "country": "🇰🇷 Corea del Sur",
+        "unit": "LOVElution, Visionary Vision, Moon",
+        "emoji": "🐺",
+        "color": "#1034A6",
+        "image": "https://i.pinimg.com/736x/53/f7/a8/53f7a8f9b1de723a34458fba9cbe21ee.jpg",
+        "description": "Sohyun es la Decimocuarta integrante de tripleS."
+    },
+
+    "xinyu": {
+        "name": "Xinyu",
+        "realName": "Xinyu",
+        "s": "S15",
+        "birth": "25 de Mayo de 2004",
+        "country": "🇰🇷 Corea del Sur",
+        "unit": "LOVElution, Visionary Vision, Sun",
+        "emoji": "🦊",
+        "color": "#C80815",
+        "image": "https://i.pinimg.com/736x/58/78/49/5878495cd493e9d976287fb1f66e1462.jpg",
+        "description": "Xinyu es la Decimoquinta integrante de tripleS."
+    },
+
+    "mayu": {
+        "name": "Mayu",
+        "realName": "Koma Mayu",
+        "s": "S16",
+        "birth": "12 de Mayo de 2002",
+        "country": "🇰🇷 Corea del Sur",
+        "unit": "EVOLution, Hatchi, Sun",
+        "emoji": "🐇",
+        "color": "#FFA089",
+        "image": "https://i.pinimg.com/736x/11/1d/97/111d9734f5883233dfbbf391c16defd9.jpg",
+        "description": "Mayu es la Decimosexta integrante de tripleS."
+    },
+
+    "lynn": {
+        "name": "Lynn",
+        "realName": "Kawakami Lynn",
+        "s": "S17",
+        "birth": "12 de Abril de 2006",
+        "country": "Japon",
+        "unit": "NXT, Visionary Vision, Moon",
+        "emoji": "🦈",
+        "color": "#9955BB",
+        "image": "https://i.pinimg.com/736x/e7/25/72/e725725726f33bf12a9d125cfd9eca2b.jpg",
+        "description": "Lynn es la Decimoseptima integrante de tripleS."
+    },
+
+    "joobin": {
+        "name": "JooBin",
+        "realName": "JooBin",
+        "s": "S18",
+        "birth": "16 de Enero de 2009",
+        "country": "Corea del Sur",
+        "unit": "NXT, Zenith",
+        "emoji": "🐣",
+        "color": "#ACDD4D",
+        "image": "https://i.pinimg.com/736x/61/94/72/619472935eb55845b397f4ede5f9f969.jpg",
+        "description": "JooBin es la Decimooctava integrante de tripleS."
+    },
+
+    "hayeon": {
+        "name": "Hayeon",
+        "realName": "Jeong Hayeon",
+        "s": "S19",
+        "birth": "1 de Agosto de 2007",
+        "country": "Corea del Sur",
+        "unit": "NXT, Zenith",
+        "emoji": "🦔",
+        "color": "#48D1CC",
+        "image": "https://i.pinimg.com/736x/57/12/98/571298b9af46dda103deca2b00892c7a.jpg",
+        "description": "Hayeon es la Decimonovena integrante de tripleS."
+    },
+
+    "shion": {
+        "name": "Shion",
+        "realName": "Park Shion",
+        "s": "S20",
+        "birth": "3 de Abril de 2006",
+        "country": "Corea del Sur",
+        "unit": "NXT, Hatchi, Moon",
+        "emoji": "🍞",
+        "color": "#F64A8A",
+        "image": "https://i.pinimg.com/736x/04/40/12/04401289588feae862b3634b64653cf7.jpg",
+        "description": "Shion es la Vigésima integrante de tripleS."
+    },
+
+    "chaewon": {
+        "name": "Chaewon",
+        "realName": "Kim Chaewon",
+        "s": "S21",
+        "birth": "2 de Mayo de 2007",
+        "country": "Corea del Sur",
+        "unit": "Glow, Hatchi, Sun",
+        "emoji": "🎀",
+        "color": "#C9A0DC",
+        "image": "https://i.pinimg.com/736x/68/c5/12/68c51277d73a3a11072eee291abbdb72.jpg",
+        "description": "Chaewon es la Vigésima primera integrante de tripleS."
+    },
+
+    "sullin": {
+        "name": "Sullin",
+        "realName": "Pirada Bunraksa",
+        "s": "S22",
+        "birth": "30 de Noviembre de 2006",
+        "country": "Tailandia",
+        "unit": "Glow, Moon",
+        "emoji": "⛄",
+        "color": "#8FBC8F",
+        "image": "https://i.pinimg.com/736x/37/2d/19/372d19483c09123e795d34a639b4bef2.jpg",
+        "description": "Sullin es la Vigésima segunda integrante de tripleS."
+    },
+
+    "seoah": {
+        "name": "Seoah",
+        "realName": "Jeong Haerin",
+        "s": "S23",
+        "birth": "11 de Junio de 2010",
+        "country": "Corea del Sur",
+        "unit": "Glow, Neptune",
+        "emoji": "☀️",
+        "color": "#E0FFFF",
+        "image": "https://i.pinimg.com/736x/9c/4d/df/9c4ddf131e812e5e46dc912836e60e27.jpg",
+        "description": "Seoah es la Vigésima tercera integrante de tripleS."
+    },
+
+    "jiyeon": {
+        "name": "Jiyeon",
+        "realName": "Ji Suhyeon",
+        "s": "S24",
+        "birth": "13 de Febrero de 2004",
+        "country": "Corea del Sur",
+        "unit": "Glow, Visionary Vision, Moon",
+        "emoji": "🦢",
+        "color": "#FCAA67",
+        "image": "https://i.pinimg.com/736x/2c/6f/07/2c6f0703d32a74dc28afe7e67a9dbe67.jpg",
+        "description": "Jiyeon es la Vigésima cuarta integrante de tripleS."
+    }
+}
