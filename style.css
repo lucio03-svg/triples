@@ -1063,3 +1063,116 @@ section {
 header {
     scroll-margin-top: 90px;
 }
+
+/* =================================
+   MODAL DE INTEGRANTES
+   ================================= */
+
+.modal-content {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.member-modal-content {
+
+    --member-color: #cccccc;
+
+    border: 3px solid var(--member-color);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+}
+
+/* Línea superior */
+
+.member-modal-content .modal-header {
+
+    border-bottom: 3px solid var(--member-color);
+
+}
+
+/* Nombre */
+
+.member-modal-content .modal-title {
+
+    color: var(--member-color);
+
+}
+
+/* S */
+
+.member-modal-content #modalS {
+
+    display: inline-block;
+
+    padding: 4px 10px;
+
+    border-radius: 20px;
+
+    background-color: var(--member-color);
+
+    color: #ffffff;
+
+    font-size: 0.85rem;
+
+    font-weight: 600;
+
+}
+
+/* Color representativo */
+
+.member-color {
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    vertical-align: middle;
+
+    margin-left: 5px;
+
+    border: 1px solid rgba(0, 0, 0, 0.15);
+
+}
+
+.modal-header {
+    padding: 20px 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.modal-title {
+    font-weight: 700;
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.modal-member-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+}
+
+.modal-body h3 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.modal-body p {
+    margin-bottom: 12px;
+}
+
+.modal-body strong {
+    font-weight: 600;
+}
+
+.modal-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
