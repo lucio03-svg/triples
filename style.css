@@ -114,7 +114,7 @@ body {
    CELULAR
    ============================== */
 
-@media (max-width: 393px) {
+@media (max-width: 768px) {
 
     .member-card img {
         height: 250px;
@@ -373,7 +373,7 @@ body {
    RESPONSIVE
    ================================= */
 
-@media (max-width: 393px) {
+@media (max-width: 768px) {
 
     .hero {
         min-height: 420px;
@@ -788,7 +788,7 @@ table, th, td {
         0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 393px) {
+@media (max-width: 768px) {
 
     .how-to-know {
         padding: 0 15px;
@@ -1177,7 +1177,7 @@ header {
     border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-@media (max-width: 393px) {
+@media (max-width: 768px) {
 
     .modal-dialog {
         margin: 10px;
@@ -1204,4 +1204,50 @@ body.modal-open {
 
 .modal {
     padding-right: 0 !important;
+}
+
+/* =================================
+   FOOTER - CELULARES
+   ================================= */
+
+@media (max-width: 768px) {
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding: 35px 20px;
+    }
+
+    /* Logo */
+
+    .footer-logo {
+        text-align: center;
+    }
+
+    /* Links */
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    /* Redes sociales */
+
+    .footer-social {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Copyright */
+
+    .footer-bottom {
+        padding: 15px 20px;
+    }
+
+    .footer-bottom p {
+        font-size: 0.75rem;
+        line-height: 1.5;
+    }
 }
