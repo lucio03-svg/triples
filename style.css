@@ -1475,3 +1475,151 @@ body.modal-open {
     }
 
 }
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    margin-top: 80px;
+    background: #FBCEB1;
+    color: #111;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 45px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-logo h2 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.footer-logo p {
+    margin: 5px 0 0;
+    color: #111;
+    font-size: 0.9rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-links a {
+    color: #111;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #111;
+    opacity: 0.7;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+
+    color: #111;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    background: #fff;
+    color: #111;
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    padding: 18px 30px;
+    text-align: center;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #222;
+    font-size: 0.8rem;
+}
+
+.section-divider {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    width: 80%;
+    margin: 60px auto;
+
+    color: #111;
+}
+
+/* =================================
+   FOOTER - CELULARES
+   ================================= */
+
+@media (max-width: 768px) {
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding: 35px 20px;
+    }
+
+    /* Logo */
+
+    .footer-logo {
+        text-align: center;
+    }
+
+    /* Links */
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    /* Redes sociales */
+
+    .footer-social {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Copyright */
+
+    .footer-bottom {
+        padding: 15px 20px;
+    }
+
+    .footer-bottom p {
+        font-size: 0.75rem;
+        line-height: 1.5;
+    }
+}
