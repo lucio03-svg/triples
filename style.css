@@ -1504,3 +1504,49 @@ body.modal-open {
     }
 
 }
+
+/* =================================
+   FOOTER - CELULARES
+   ================================= */
+
+@media (max-width: 768px) {
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding: 35px 20px;
+    }
+
+    /* Logo */
+
+    .footer-logo {
+        text-align: center;
+    }
+
+    /* Links */
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    /* Redes sociales */
+
+    .footer-social {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Copyright */
+
+    .footer-bottom {
+        padding: 15px 20px;
+    }
+
+    .footer-bottom p {
+        font-size: 0.75rem;
+        line-height: 1.5;
+    }
+}
