@@ -83,6 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             wrapper.appendChild(iframe);
             img.replaceWith(wrapper);
+            link.classList.add("d-none");   // oculta el botón "Ver MV"
         });
 
         // 2) Cargar solo el video que se ve
