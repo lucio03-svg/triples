@@ -1,9 +1,110 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    // =================================
+    // TARJETAS DE INTEGRANTES
+    // =================================
+
+    const miembros = [
+        { n: 1,  key: "seoyeon",  name: "Yoon Seo-Yeon",  age: 23, flag: "kr", color: "#1E90FF" },
+        { n: 2,  key: "hyerin",   name: "Jeong Hye-Rin",  age: 19, flag: "kr", color: "#8B5FBF" },
+        { n: 3,  key: "jiwoo",    name: "Lee Ji-Woo",     age: 20, flag: "kr", color: "#FFF44F" },
+        { n: 4,  key: "chaeyeon", name: "Kim Chae-Yeon",  age: 21, flag: "kr", color: "#7CB342" },
+        { n: 5,  key: "yooyeon",  name: "Kim Yoo-Yeon",   age: 25, flag: "kr", color: "#F47CB4" },
+        { n: 6,  key: "soomin",   name: "Kim Soo-Min",    age: 18, flag: "kr", color: "#F091A9" },
+        { n: 7,  key: "nakyoung", name: "Kim Na-Kyoung",  age: 23, flag: "kr", color: "#5F9EA0" },
+        { n: 8,  key: "yubin",    name: "Gong Yu-Bin",    age: 21, flag: "kr", color: "#FFE4E1" },
+        { n: 9,  key: "kaede",    name: "Kaede",          age: 20, flag: "jp", color: "#FFCC33" },
+        { n: 10, key: "dahyun",   name: "Seo Da-Hyun",    age: 23, flag: "kr", color: "#FBAED2" },
+        { n: 11, key: "kotone",   name: "Kotone",         age: 22, flag: "jp", color: "#FFDF00" },
+        { n: 12, key: "yeonji",   name: "Kwak Yeon-Ji",   age: 18, flag: "kr", color: "#4169E1" },
+        { n: 13, key: "nien",     name: "Nien",           age: 23, flag: "tw", color: "#FFA343" },
+        { n: 14, key: "sohyun",   name: "Park So-Hyun",   age: 23, flag: "kr", color: "#1034A6" },
+        { n: 15, key: "xinyu",    name: "Xinyu",          age: 24, flag: "cn", color: "#C80815" },
+        { n: 16, key: "mayu",     name: "Mayu",           age: 24, flag: "jp", color: "#FFA089" },
+        { n: 17, key: "lynn",     name: "Lynn",           age: 20, flag: "jp", color: "#9955BB" },
+        { n: 18, key: "joobin",   name: "Joo-Bin",        age: 17, flag: "kr", color: "#ACDD4D" },
+        { n: 19, key: "hayeon",   name: "Jeong Ha-Yeon",  age: 19, flag: "kr", color: "#48D1CC" },
+        { n: 20, key: "shion",    name: "Park Shi-On",    age: 20, flag: "kr", color: "#F64A8A" },
+        { n: 21, key: "chaewon",  name: "Kim Chae-Won",   age: 19, flag: "kr", color: "#C9A0DC" },
+        { n: 22, key: "sullin",   name: "Sullin",         age: 19, flag: "th", color: "#8FBC8F"},
+        { n: 23, key: "seoah",    name: "Seo-Ah",         age: 16, flag: "kr", color: "#E0FFFF"},
+        { n: 24, key: "jiyeon",   name: "Ji-Yeon",        age: 22, flag: "kr", color: "#FCAA67" }
+    ];
+
+    const grid = document.getElementById("members-grid");
+
+    grid.innerHTML = miembros.map((m, i) => `
+        <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="member-card" id="s${m.n}"
+                data-bs-toggle="modal" data-bs-target="#memberModal"
+                data-member="${m.key}"
+                style="--color: ${m.color}">
+            <div class="member-avatar">S${m.n}</div>
+            <div class="member-info">
+                <span>S${m.n} ${m.name}</span>
+                <h5>${m.age} Años</h5>
+                <h6 class="fi fi-${m.flag}"></h6>
+            </div>
+            </div>
+        </div>
+        `).join("");
 
     // =================================
     // CARRUSELES
     // =================================
+
+    function getYouTubeId(url) {
+        try {
+            const u = new URL(url);
+            if (u.hostname === "youtu.be") return u.pathname.slice(1);
+            return u.searchParams.get("v");
+        } catch {
+            return null;
+        }
+    }
+
+    document.querySelectorAll("#subunidades .carousel").forEach(carousel => {
+
+        // 1) Reemplazar cada imagen por un iframe de YouTube
+        carousel.querySelectorAll(".carousel-item").forEach(item => {
+            const img = item.querySelector("img");
+            const link = item.querySelector(".mv-button");
+            const id = link && getYouTubeId(link.href);
+            if (!img || !id) return;
+
+            const wrapper = document.createElement("div");
+            wrapper.className = "ratio ratio-16x9";
+
+            const iframe = document.createElement("iframe");
+            iframe.dataset.src = "https://www.youtube-nocookie.com/embed/" + id;
+            iframe.title = link.getAttribute("title") || img.alt;
+            iframe.allow = "accelerometer; encrypted-media; gyroscope; picture-in-picture";
+            iframe.allowFullscreen = true;
+
+            wrapper.appendChild(iframe);
+            img.replaceWith(wrapper);
+        });
+
+        // 2) Cargar solo el video que se ve
+        const frames = () => carousel.querySelectorAll("iframe");
+
+        const load = f => {
+            if (f && f.dataset.src && f.getAttribute("src") !== f.dataset.src) {
+                f.setAttribute("src", f.dataset.src);
+            }
+        };
+        const unload = f => {
+            if (f.getAttribute("src")) f.setAttribute("src", "about:blank");
+        };
+
+        load(frames()[0]);
+
+        carousel.addEventListener("slide.bs.carousel", e => load(frames()[e.to]));
+
+        carousel.addEventListener("slid.bs.carousel", e => {
+            frames().forEach((f, i) => { if (i !== e.to) unload(f); });
+        });
+    });
 
     const carousels =
         document.querySelectorAll(".carousel");
@@ -140,19 +241,21 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.getElementById("modalDescription")
                     .textContent = member.description;
 
-
                 // ==========================
-                // IMAGEN
+                // INSTAGRAM
                 // ==========================
 
-                const image =
-                    document.getElementById(
-                        "modalImage"
-                    );
+                const igBox = document.getElementById("modalInstagram");
+                const posts = member.instagram || [];
 
-                image.src = member.image;
-
-                image.alt = member.name;
+                igBox.innerHTML = posts.length
+                    ? posts.map(url => `
+                        <blockquote class="instagram-media"
+                            data-instgrm-permalink="${url}"
+                            data-instgrm-version="14"
+                            style="max-width:540px; width:100%; margin:0 auto 1rem;">
+                        </blockquote>`).join("")
+                    : "<p class='text-muted'>Todavía no hay publicaciones para mostrar.</p>";
 
 
                 // ==========================
@@ -184,6 +287,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
             }
         );
+
+        memberModal.addEventListener("shown.bs.modal", function () {
+            
+            if (window.instgrm) window.instgrm.Embeds.process();
+
+        });
+
+        memberModal.addEventListener("hidden.bs.modal", function () {
+
+            document.getElementById("modalInstagram").innerHTML = "";
+
+        });
 
     }
 
